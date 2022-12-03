@@ -1,9 +1,16 @@
 .clients{
-    padding-bottom: 86px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+         @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px; 
+    }
 }
 
 .clients__list{
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
