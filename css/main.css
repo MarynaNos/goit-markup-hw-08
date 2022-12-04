@@ -599,7 +599,12 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .team__socials-list {
+    padding-bottom: 30px;
+  }
 }
 
 .team__social-link {
