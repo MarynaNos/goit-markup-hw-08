@@ -1,5 +1,9 @@
 .footer__contacts-container{
-    margin-right: 70px;
+   
+    
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+    }
 }
 
 .contacts:not(:last-child){
