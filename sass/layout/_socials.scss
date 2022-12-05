@@ -1,9 +1,18 @@
 .socials{
     min-width: 206px;
     min-height: 80px;
+    margin-bottom: 60px;
+
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 103px;
+    }
     
     @media screen and (min-width: $desktop) {
         margin-right: 93px;
+        text-align: start;
+        margin-bottom: 0;
     }
 }
 
@@ -21,6 +30,7 @@
 .socials__list{
     display: flex;
     gap: 10px;
+    justify-content: center;
 }
 
 .socials__link{

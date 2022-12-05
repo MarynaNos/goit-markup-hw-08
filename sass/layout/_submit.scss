@@ -1,12 +1,14 @@
 .submit__container{
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         
     } 
 
-    @media screen and (min-width: 1200px) {
-        display: flex;
+    @media screen and (min-width: $desktop) {
+        flex-direction: row;
         gap: 12px;
     }
 }
@@ -14,18 +16,25 @@
 .submit__sign{
     margin-bottom: 20px;
 
+    text-align: center;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+
+    @media screen and (min-width: $desktop) {
+        text-align: start;
+    }
 }
 
 .submit__email{
     width: 450px;
     height: 50px;
 
+    margin-bottom: 20px;
     padding-left: 16px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -41,6 +50,7 @@
 
     @media screen and (min-width: $desktop) {
         width: 358px;
+        margin-bottom: 0;
     }
     
     &::placeholder{

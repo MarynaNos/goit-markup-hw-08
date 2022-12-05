@@ -815,6 +815,9 @@ footer {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -863,9 +866,20 @@ footer {
   }
 }
 
+.footer__contacts-container {
+  margin-bottom: 60px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__contacts-container {
+    margin-right: 165px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__contacts-container {
     margin-right: 70px;
+    text-align: start;
+    margin-bottom: 0;
   }
 }
 
@@ -904,10 +918,19 @@ footer {
 .socials {
   min-width: 206px;
   min-height: 80px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .socials {
+    margin-bottom: 103px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .socials {
     margin-right: 93px;
+    text-align: start;
+    margin-bottom: 0;
   }
 }
 
@@ -926,6 +949,9 @@ footer {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .socials__link {
@@ -950,17 +976,31 @@ footer {
   background-color: var(--active-color);
 }
 
+.submit__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 @media screen and (min-width: 1200px) {
   .submit__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     gap: 12px;
   }
 }
 
 .submit__sign {
   margin-bottom: 20px;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -968,10 +1008,16 @@ footer {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+@media screen and (min-width: 1200px) {
+  .submit__sign {
+    text-align: start;
+  }
+}
 
 .submit__email {
   width: 450px;
   height: 50px;
+  margin-bottom: 20px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -986,6 +1032,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .submit__email {
     width: 358px;
+    margin-bottom: 0;
   }
 }
 .submit__email::-webkit-input-placeholder {

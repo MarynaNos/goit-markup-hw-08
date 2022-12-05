@@ -1,8 +1,15 @@
 .footer__contacts-container{
+    margin-bottom: 60px;
+    text-align: center;
    
-    
+    @media screen and (min-width: $tablet) {
+        margin-right: 165px;
+    }
+
     @media screen and (min-width: $desktop) {
         margin-right: 70px;
+        text-align: start;
+        margin-bottom: 0;
     }
 }
 
