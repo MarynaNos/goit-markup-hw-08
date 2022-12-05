@@ -95,7 +95,7 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -649,7 +649,7 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .clients {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -830,25 +830,37 @@ footer {
 
 .footer__logo {
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .footer__logo-web {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--logo-web-color);
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo-web {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .footer__logo-studio {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #FFFFFF;
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo-studio {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -892,17 +904,21 @@ footer {
 .socials {
   min-width: 206px;
   min-height: 80px;
-  margin-right: 93px;
+}
+@media screen and (min-width: 1200px) {
+  .socials {
+    margin-right: 93px;
+  }
 }
 
 .socials__sign {
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-bottom: 20px;
 }
 
 .socials__list {
@@ -934,11 +950,13 @@ footer {
   background-color: var(--active-color);
 }
 
-.submit__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 12px;
+@media screen and (min-width: 1200px) {
+  .submit__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12px;
+  }
 }
 
 .submit__sign {
@@ -952,7 +970,7 @@ footer {
 }
 
 .submit__email {
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -964,6 +982,11 @@ footer {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 1200px) {
+  .submit__email {
+    width: 358px;
+  }
 }
 .submit__email::-webkit-input-placeholder {
   font-weight: 400;
