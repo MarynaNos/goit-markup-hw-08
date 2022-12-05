@@ -1,5 +1,10 @@
 .works{
+    display: none;
     padding-top: 0;
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+    }
 }
 
 .works__list {
@@ -15,6 +20,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    
     display: flex;
     align-items: center;
     justify-content: center;

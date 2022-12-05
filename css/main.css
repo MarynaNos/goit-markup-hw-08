@@ -495,7 +495,15 @@ body {
 }
 
 .works {
+  display: none;
   padding-top: 0;
+}
+@media screen and (min-width: 1200px) {
+  .works {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .works__list {
@@ -928,7 +936,7 @@ footer {
 }
 @media screen and (min-width: 1200px) {
   .socials {
-    margin-right: 93px;
+    margin-right: 94px;
     text-align: start;
     margin-bottom: 0;
   }
