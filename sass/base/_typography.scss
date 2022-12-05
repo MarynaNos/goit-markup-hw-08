@@ -14,11 +14,7 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-
-    @media screen and (min-width: $tablet) {
-        
-    } 
-    
+ 
     @media screen and (min-width: $desktop) {
         max-width: 696px;
         font-size: 44px;
