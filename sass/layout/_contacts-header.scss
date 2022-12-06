@@ -2,7 +2,10 @@
     display: flex;
     margin-left: auto;
     margin-right: 15px;
-    
+
+    @media (max-width: 767px) {
+        display: none;
+    }
 
     @media screen and (min-width: $tablet) {
         flex-direction: column;
