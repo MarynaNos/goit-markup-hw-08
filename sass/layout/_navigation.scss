@@ -3,14 +3,24 @@
 }
 
 .navigation{
-    margin-left: 93px;
+    
+
+    @media screen and (min-width: $tablet) {
+        margin-left: 88px;
+    } 
+    
+    @media screen and (min-width: $desktop) {
+        margin-left: 93px;
+    }
 }
 
 .navigation-item {
     position: relative;
     display: block;
+    
     padding-top: 32px;
-    padding-bottom: 32px; 
+    padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -40,6 +50,6 @@
     }
 }
 
-.navigation-item-list:not(:first-child){
-    margin-left: 50px;
+.navigation-item-list:not(:last-child){
+    margin-right: 50px;
 }

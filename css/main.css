@@ -333,8 +333,15 @@ body {
   display: flex;
 }
 
-.navigation {
-  margin-left: 93px;
+@media screen and (min-width: 768px) {
+  .navigation {
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation {
+    margin-left: 93px;
+  }
 }
 
 .navigation-item {
@@ -369,8 +376,8 @@ body {
   background: #2196F3;
 }
 
-.navigation-item-list:not(:first-child) {
-  margin-left: 50px;
+.navigation-item-list:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contacts-list {
