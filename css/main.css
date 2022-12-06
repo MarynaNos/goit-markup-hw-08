@@ -281,26 +281,50 @@ body {
 }
 
 .header-logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .header-logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .header-logo-web {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--logo-web-color);
+}
+@media screen and (min-width: 1200px) {
+  .header-logo-web {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .header-logo-studio {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #000000;
+}
+@media screen and (min-width: 1200px) {
+  .header-logo-studio {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .navigation-list {
