@@ -3,6 +3,12 @@
     border: none;
 }
 
+.menu-toggle {
+    @media screen and (min-width: $tablet) {
+        display: none;
+    } 
+}
+
 .order-btn {
     display: block;
 
