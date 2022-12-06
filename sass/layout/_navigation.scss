@@ -3,7 +3,9 @@
 }
 
 .navigation{
-    
+    @media (max-width: 767px) {
+        display: none;
+        }
 
     @media screen and (min-width: $tablet) {
         margin-left: 88px;
