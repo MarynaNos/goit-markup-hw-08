@@ -404,7 +404,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .contacts-list-item:first-child {
     padding-top: 21px;
     padding-bottom: 5px;
@@ -415,6 +415,10 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
+  .contacts-list-item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
   .contacts-list-item:not(:first-child) {
     margin-left: 40px;
   }
