@@ -4,10 +4,31 @@
 }
 
 .menu-toggle {
-    @media screen and (min-width: $tablet) {
-        display: none;
-    } 
-}
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 40px;
+    min-height: 40px;
+    padding: 0;
+    background: var(--background-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+   
+       @media screen and (min-width: $tablet) {
+           display: none;
+       }
+       
+       &:hover,
+       &:focus {
+         fill: var(--active-color);
+       }
+    }
 
 .order-btn {
     display: block;
