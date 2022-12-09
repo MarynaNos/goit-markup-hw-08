@@ -182,7 +182,26 @@
                     </li>
                     <li>
                         <div class="works__wrapper">
-                            <img src="./images/img3.jpg" alt="Дизайн" width="370" height="294">
+                            <!-- <img src="./images/img3.jpg" alt="Дизайн" width="370" height="294"> -->
+                            <picture>
+                                <source
+                                  media="(min-width: $desktop)"
+                                  srcset="./images/works/img_lg@1x-2.webp 1x, ./images/works/img_lg@2x-2.webp 2x"
+                                  type="image/webp"
+                                />
+                                <source
+                                  media="(min-width: $desktop)"
+                                  srcset="./images/works/img_lg@1x-2.jpg 1x, ./images/works/img_lg@2x-2.jpg 2x"
+                                  type="image/jpg"
+                                />
+                                <img
+                                  class=""
+                                  src="./images/works/img_lg@1x-2.jpg"
+                                  alt="Дизайн"
+                                  width="370"
+                                  height="294"
+                                />
+                              </picture>
                             <div class="works__overlay">
                                 <p class="works__overlay-title">дизайнерські рішення</p>
                             </div>
