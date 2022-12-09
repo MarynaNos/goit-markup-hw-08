@@ -357,7 +357,46 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img src="./images/mykola.jpg" alt="Микола Тарасов" width="270" height="260">
+                        <!-- <img src="./images/mykola.jpg" alt="Микола Тарасов" width="270" height="260"> -->
+
+                        <picture class="team_img">
+                            <source
+                              media="(min-width: $desktop)"
+                              srcset="./images/team/img_lg@1x-1.webp 1x, ./images/team/img_lg@2x-1.webp 2x"
+                              type="image/webp"
+                            />
+                            <source
+                              media="(min-width: $desktop)"
+                              srcset="./images/team/img_lg@1x-1.jpg 1x, ./images/team/img_lg@2x-1.jpg 2x"
+                              type="image/jpg"
+                            />
+                            <source
+                              media="(min-width: $tablet)"
+                              srcset="./images/team/img_md@1x-1.webp 1x, ./images/team/img_md@2x-1.webp 2x"
+                              type="image/webp"
+                            />
+                            <source
+                              media="(min-width: $tablet)"
+                              srcset="./images/team/img_md@1x-1.jpg 1x, ./images/team/img_md@2x-1.jpg 2x"
+                              type="image/jpg"
+                            />
+                            <source
+                              media="(max-width: 767px)"
+                              srcset="./images/team/img_sm@1x-1.webp 1x, ./images/team/img_sm@2x-1.webp 2x"
+                              type="image/webp"
+                            />
+                            <source
+                              media="(max-width: 767px)"
+                              srcset="./images/team/img_sm@1x-1.jpg 1x, ./images/team/img_sm@2x-1.jpg 2x"
+                              type="image/jpg"
+                            />
+                            <img
+                              src="./images/team/img_sm@1x-1.jpg"
+                              alt="Микола Тарасов"
+                              width="270"
+                              height="260"
+                            />
+                        </picture>
                         <div class="team__card">
                             <h3 class="team__name">Микола Тарасов</h3>
                             <p class="team__position">Marketing</p>
