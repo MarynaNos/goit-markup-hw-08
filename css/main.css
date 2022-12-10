@@ -869,15 +869,6 @@ body {
   }
 }
 
-.team_img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .team__card {
   padding-top: 30px;
   margin-bottom: 16px;
